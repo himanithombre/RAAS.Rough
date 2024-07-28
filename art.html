@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rand-Avdut</title>
+</head>
+<style>
+    body {
+        margin: 12px;
+        padding: 85px;
+        font-family: Arial, sans-serif;
+        background-color:#d0c3cb;
+    }
+
+    nav {
+        background-color: #a797a1;
+        overflow: hidden;
+    }
+
+    .logo {
+        float: left;
+        color: #3d0303;
+        font-weight: 300;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 45px;
+    }
+
+    ul {
+        list-style-type: none;
+        float: right;
+        display: flex;
+        margin: 25px;
+        gap: 20px;
+        align-items: center;
+        justify-content: flex-end;
+        transition: 0.3s;
+        font-size: larger;
+        color: black;
+    }
+
+   
+    .box1 {
+        width: 100%;
+        height: 550px;
+        margin: 10px;
+        background-color: #ffdec7;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 200px;
+        margin: 10px;
+        background-color: #dcc2b0;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+    }
+    .box3{
+        width: 100%;
+        height: 400px;
+        margin: 10px;
+        background-color: #b9a89b;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+    }
+    .box4{
+        width: 100%;
+        height: 350px;
+        margin: 10px;
+        background-color: #d1c2b8;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+    }
+    .box5{
+        width: 100%;
+        height: 420px;
+        margin: 10px;
+        background-color: #bbaca1;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+
+    }
+    .box6{
+        width: 100%;
+        height: 350px;
+        margin: 10px;
+        background-color: #cda284;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+    }
+    .box7{
+        width: 100%;
+        height: 500px;
+        margin: 10px;
+        background-color: #c4b5aa;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+    }
+    .box8{
+        width: 100%;
+        height: 250px;
+        margin: 10px;
+        background-color: #d7cac0;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+        opacity: 0.8;
+        transform: rotateY(180deg);
+        animation: fadein 2s ease-in-out infinite alternate;
+    }
+
+</style>
+
+<body>
+   <!-- <nav>
+        <div class="logo">Rang-Avdut Art Studio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> -->
+    <div class="main-box">
+        <nav>
+            <div class="logo">Rang-Avdut Art Studio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        </div>
+    
+
+</body>
+
+</html>
